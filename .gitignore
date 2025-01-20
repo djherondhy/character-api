@@ -1,0 +1,26 @@
+# Ambiente virtual
+venv/
+*.pyc
+__pycache__/
+
+# Configurações do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos do banco de dados local
+*.sqlite3
+
+# Logs e debug
+*.log
+
+# Arquivos de cache do Django
+staticfiles/
+media/
+
+# Arquivos de IDEs
+.vscode/
+.idea/
+
+# Configurações de deploy
+*.env
+.env.*
