@@ -1,8 +1,9 @@
 from rest_framework import serializers
-from .models import Personagem
+from .models import Character
 
-class PersonagemSerializer(serializers.ModelSerializer):
+class CharacterSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Personagem
-        fields = ['id', 'nome', 'classe', 'forca', 'imagem']
+        model = Character
+        fields = ['id', 'nome', 'classe', 'forca', 'imagem', 'user']
+        read_only_fields = ['user']
         
